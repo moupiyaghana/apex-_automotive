@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="script.css">
+
+    <title>Apex Automotive</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-family: cursive;">Apex Automotive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">List
+                            of Super Cars</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Cars Available</a></li>
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-warning" type="submit">
+                        Search
+                    </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" style="padding:1%;">
+                        Sign_in
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #2a2e32;">
+                                    <h5 class="modal-title" id="staticBackdropLabel" style="color: white;"><strong>Sign
+                                            in</strong></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="background-color: #212529;">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputAddress" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress"
+                                                placeholder="Flat no. ,Street no. ,etc.">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">State</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>West Bengal</option>
+                                                <option>Maharastra</option>
+                                                <option>Kerala</option>
+                                                <option>Odissa</option>
+                                                <option>Punjab</option>
+                                                <option>Uttar Pradesh</option>
+                                                <option>Madhya Pradesh</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" style="text-align: center;">
+                                            <button type="submit" class="btn btn-outline-warning">Sign in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+        </div>
+    </nav>
+
+    <div style="background-color: #2a2e32;" id="carouselExampleIndicators" class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                aria-label="Slide 11"></button>
+        </div>
+        <div class="carousel-inner" style="height: 55%;width: 55%;margin-right: auto;margin-left: auto;">
+            <div class="carousel-item active">
+                <img src="https://wallpaperaccess.com/full/186105.jpg" class="d-block w-100" alt="Mustang" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images7.alphacoders.com/447/thumb-1920-447698.jpg" class="d-block w-100"
+                    alt="Supra" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapercave.com/wp/wp2642163.jpg" class="d-block w-100" alt="Lamborgini" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.wallpaperscraft.com/image/single/bugatti_chiron_bugatti_sports_car_129532_1920x1080.jpg"
+                    class="d-block w-100" alt="Bugatti" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.hdqwalls.com/download/2021-porsche-gt3-rs-4k-bg-1920x1080.jpg"
+                    class="d-block w-100" alt="Porshe" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapers.com/images/hd/4k-mercedes-2021-luxury-car-qh3pxu3uudnaw37q.jpg"
+                    class="d-block w-100" alt="Mercedes" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.hdqwalls.com/download/grey-nissan-gtr-4k-oy-1920x1080.jpg"
+                    class="d-block w-100" alt="Gtr" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpaperaccess.com/full/2806608.jpg" class="d-block w-100" alt="Mclaren" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.hdqwalls.com/download/pagani-zonda-5k-2019-do-1920x1080.jpg"
+                    class="d-block w-100" alt="Pagani" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://get.wallhere.com/photo/1920x1080-px-car-Ferrari-Ferrari-458-Italia-683969.jpg"
+                    class="d-block w-100" alt="Ferrari" />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.wallpaperscraft.com/image/single/bentley_continental_gt_102107_1920x1080.jpg"
+                    class="d-block w-100" alt="Bentley" />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert"
+        style="margin-bottom: 0%;font-family: cursive;">
+        <strong>Welcome! We provide best supercars at reasonable price.</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div style="background-color: #2a2e32">
+        <p style="
+          font-size: xx-large;
+          color: yellow;
+          text-align: center;
+          font-family: cursive;
+          text-decoration: underline;
+        ">
+            <strong>India's biggest marketplace
+                for Top-Tier super cars</strong>
+        </p>
+        <p style="
+          text-align: center;
+          font-size: larger;
+          color: white;
+          font-family: cursive;
+            margin-bottom: 0%;
+        ">
+            <strong>
+                Welcome! to Apex Automotive, where
+                <strong>performance meets precision</strong>. We are a leading
+                automotive company dedicated to delivering top-tier vehicles and
+                services to discerning enthusiasts and drivers. At Apex Automotive, we
+                believe that driving should be an exhilarating experience, and our
+                mission is to provide you with the finest selection of
+                high-performance vehicles. It serves as a haven for automotive
+                connoisseurs, providing an exceptional collection of meticulously
+                curated supercars that embody the pinnacle of automotive engineering.
+                From the sleek lines to the roaring engines, every vehicle showcased
+                on Apex Automotive is a masterpiece waiting to be driven. With a
+                passion for delivering automotive perfection, Apex Automotive opens
+                the doors to a world where dreams are turned into reality, and the
+                thrill of the open road becomes an everyday affair. With their
+                unparalleled selection and dedication to customer satisfaction, Apex
+                Automotive stands as a true leader in the realm of supercar selling
+                websites, captivating hearts and igniting the spirit of adventure in
+                every car enthusiast who crosses their path.
+            </strong>
+        </p>
+    </div>
+    <br>
+    <p style="
+        text-decoration: underline;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: xx-large;
+        color: white;
+        background-color: #2a2e32;
+        margin-bottom: .7%;
+      ">
+        <strong>-- Available Cars --</strong>
+    </p>
+    <div style="display: flex; padding: 1%;background-color: #212529;">
+        <div class="card" style="width: 18rem">
+            <img src="https://imgd.aeplcdn.com/0x0/cw/ec/39232/Porsche-New-911-Exterior-153677.jpg?wm=1"
+                class="card-img-top" alt="porshe 911" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Porshe 911
+                </h5>
+                <p class="card-text">Price - ₹ 1.83 Crore to ₹ 3.32 Crore</p>
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://www.hdcarwallpapers.com/walls/2020_audi_r8_v10_performance_3-HD.jpg" class="card-img-top"
+                alt="Audi R8" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">Audi R8</h5>
+                <p class="card-text">Price - ₹ 2.72 Crore - ₹ 3.02 Crore</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://www.hdcarwallpapers.com/walls/lamborghini_huracan_evo_2021_5k-HD.jpg" class="card-img-top"
+                alt="Lamborgini Huracan" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Lamborghini Huracan
+                </h5>
+                <p class="card-text">Price - ₹ 3.22 Crore Onwards</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://c4.wallpaperflare.com/wallpaper/643/720/991/aston-martin-db11-amr-signature-edition-2018-4k-wallpaper-preview.jpg"
+                class="card-img-top" alt="Aston Martin db11" <i class="fa-sharp fa-light fa-tire fa-spin"
+                style="color: #9031aa;"></i>
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Aston Martin DB11
+                </h5>
+                <p class="card-text">Price - ₹ 3.80 Crore Onwards</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://static.toiimg.com/thumb/msid-76993764,width-1280,height-720,resizemode-4/.jpg"
+                class="card-img-top" alt="Mercedes Benz AMG-GT" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Mercedes Benz AMG-GT
+                </h5>
+                <p class="card-text">Price - ₹ 2.16 Crore Onwards</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; padding: 1%;background-color: #212529;margin-bottom: .8%;">
+        <div class="card" style="width: 18rem">
+            <img src="https://w0.peakpx.com/wallpaper/966/387/HD-wallpaper-ford-mustang-rtr-2017-tuning-mustang-sport-car-silver-mustang-thumbnail.jpg"
+                class="card-img-top" alt="Ford Mustang GT" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Ford Mustang GT
+                </h5>
+                <p class="card-text">Price - ₹ 7.4 Crore - ₹ 8.1 Crore</p>
+                <!-- Button trigger modal --><i class="fa-sharp fa-light fa-tire fa-spin" style="color: #9031aa;"></i>
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://images.pexels.com/photos/6894428/pexels-photo-6894428.jpeg?cs=srgb&dl=pexels-sebastian-pichard-6894428.jpg&fm=jpg"
+                class="card-img-top" alt="Toyota Supra" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Toyota Supra
+                </h5>
+                <p class="card-text">Price - ₹ 8.5 Crore Onwards</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://images8.alphacoders.com/130/1300328.jpg" class="card-img-top" alt="Bugatti Chiron" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Bugatti Chiron
+                </h5>
+                <p class="card-text">Price - ₹ 19.21 Crore - ₹ 28.63 Crore</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://images5.alphacoders.com/903/thumb-1920-903508.jpg" class="card-img-top"
+                alt="Mclaren 720S" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    Mclaren 720S
+                </h5>
+                <p class="card-text">Price - ₹ 4.6 Crore Onwards</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem">
+            <img src="https://m.media-amazon.com/images/I/61uHBHLgYzL._AC_UF894,1000_QL80_.jpg" class="card-img-top"
+                alt="koenigsegg Agera" />
+            <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline">
+                    koenigsegg Agera
+                </h5>
+                <p class="card-text">Price - ₹ 12 Crore Onwards</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    </div>
+    <p style="
+        text-align: center;
+        text-decoration: underline;
+        font-size: x-large;
+        color: white;
+        background-color: #2a2e32;
+        padding: 0%;
+        margin-bottom: 0%;
+      ">
+        <strong> -- Frequently Asked Questions -- </strong>
+    </p>
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="padding: 0%;">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <strong>Q. How can I browse and search for supercars on Apex
+                        Automotive?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    On our website, you can easily navigate through our extensive
+                    collection of supercars using our advanced search filters, allowing
+                    you to find the perfect vehicle based on your desired specifications
+                    such as make, model, year, price range, and more.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <strong>Q. Are the supercars listed on Apex Automotive new or
+                        pre-owned?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    We offer both new and pre-owned supercars on our website. Each
+                    listing provides detailed information about the condition, mileage,
+                    and history of the vehicle, enabling you to make an informed
+                    decision.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <strong>Q. Can I schedule a test drive for a supercar listed on Apex
+                        Automotive?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Absolutely! Once you find a supercar that captures your interest,
+                    you can easily schedule a test drive by contacting our dedicated
+                    team. We'll make the necessary arrangements to ensure you have a
+                    thrilling and unforgettable experience behind the wheel.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                    <strong>Q. What financing options are available for purchasing a supercar
+                        from Apex Automotive?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    We understand that acquiring a supercar is a significant investment.
+                    That's why we offer flexible financing options to help you make your
+                    dream car a reality. Our finance team can guide you through the
+                    process and tailor a financing solution that suits your needs.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                    <strong>Q. Does Apex Automotive provide warranty or post-purchase
+                        support?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Yes, we strive to provide exceptional customer service even after
+                    the sale. Many of our supercars come with manufacturer warranties,
+                    and our team is available to assist you with any questions or
+                    concerns you may have after your purchase.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingsix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+                    <strong>Q. Can I trade in my current vehicle when purchasing a supercar
+                        from Apex Automotive?</strong>
+                </button><i class="fa-duotone fa-tire fa-spin"></i>
+            </h2>
+            <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Absolutely! We welcome trade-ins and offer competitive pricing. Our
+                    team can provide you with an appraisal for your current vehicle,
+                    which can be used as credit towards the purchase of your desired
+                    supercar.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingseven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseseven">
+                    <strong>Q. Does Apex Automotive offer international shipping?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingseven"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Yes, we can arrange for international shipping of supercars to
+                    various locations. Please contact our team to discuss the specific
+                    details and requirements for shipping a vehicle to your desired
+                    destination.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingeight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <strong>Q. Are there any additional fees or charges apart from the listed
+                        price of the supercar?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Our listings strive to be transparent, and the listed price
+                    generally includes the vehicle's base cost. However, there may be
+                    additional fees such as taxes, registration, and transportation
+                    charges. Our team will provide you with a comprehensive breakdown of
+                    all associated costs.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <p style="
+        text-align: center;
+        text-decoration: underline;
+        font-size: xx-large;
+        color: white;
+        font-family: cursive;
+        background-color: #2a2e32;
+        padding: 0%;
+        margin-bottom: 0%;
+      ">
+        <strong>-- About Us --</strong>
+    </p>
+    <ul style="color: rgb(5, 0, 24); background-color: rgb(235, 197, 207);margin-bottom: 0%; font-family: cursive;">
+        <li>
+            <strong>
+                At Apex Automotive, we are more than just a supercar selling website -
+                we are a destination where dreams become reality and automotive
+                enthusiasts find their true passion. With a relentless pursuit of
+                excellence, we have established ourselves as the ultimate platform for
+                those seeking the extraordinary.</strong>
+        </li>
+        <br />
+        <li>
+            <strong>
+                Our mission is to provide an unrivaled experience that merges luxury,
+                performance, and innovation. We curate a captivating collection of
+                supercars that represent the epitome of automotive engineering, each
+                one meticulously selected to meet the highest standards of quality and
+                craftsmanship. From the iconic brands to the cutting-edge models, we
+                offer a diverse range of vehicles that cater to the most discerning
+                tastes.</strong>
+        </li>
+        <br />
+        <li>
+            <strong>
+                We understand that owning a supercar is more than just possessing a
+                mode of transportation - it is an expression of individuality, an
+                embodiment of power and prestige. That's why we go above and beyond to
+                ensure that our customers receive unparalleled service throughout
+                their journey. Our dedicated team of automotive enthusiasts is
+                committed to providing personalized attention, expert guidance, and a
+                seamless purchasing experience.</strong>
+        </li>
+        <br />
+        <li>
+            <strong>
+                Transparency and trust are at the core of our values. We strive to
+                provide comprehensive information about each vehicle, including
+                detailed specifications, accurate pricing, and vehicle history. Our
+                goal is to empower our customers with the knowledge they need to make
+                informed decisions and invest in their automotive dreams with
+                confidence.</strong>
+        </li>
+        <br />
+        <li>
+            <strong>
+                But our commitment extends far beyond the point of purchase. We
+                believe in building lasting relationships with our customers, offering
+                post-purchase support, and fostering a vibrant community of
+                like-minded enthusiasts. Whether it's organizing exclusive events,
+                connecting fellow supercar owners, or providing maintenance tips, we
+                are here to enhance your ownership experience and ensure that your
+                passion for automotive excellence is continuously fueled.</strong>
+        </li>
+        <br />
+        <li>
+            <strong>
+                Welcome to Apex Automotive, where automotive dreams take shape and the
+                pursuit of automotive perfection knows no limits. Join us on this
+                exhilarating journey and discover a world of unparalleled luxury,
+                performance, and exhilaration.</strong>
+        </li>
+        <br />
+    </ul>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-12 pb-4" style="font-family: cursive;">
+                    <h1 style="text-align: center;text-decoration: underline;">Reviews</h1>
+                    <div class="comment mt-4 text-justify float-left">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" class="rounded-circle" width="40" height="40">
+                        <h4>Jhon Doe</h4>
+                        <span>- 2 December, 2022</span>
+                        <br>
+                        <p>I've been a supercar enthusiast for years, and Apex Automotive exceeded all my expectations.
+                            The
+                            selection of cars is mind-blowing, and their customer service is top-notch. They made the
+                            entire buying
+                            process smooth and enjoyable. I can't wait to hit the open road in my dream car!</p>
+                    </div>
+                    <div class="text-justify darker mt-4 float-right">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" class=" rounded-circle" width="40" height="40">
+                        <h4>Michael R.</h4>
+                        <span>- 20 October, 2022</span>
+                        <br>
+                        <p>From start to finish, Apex Automotive provided an exceptional experience. Their website is
+                            user-friendly,
+                            and I easily found the car I've always wanted. The team was incredibly helpful, guiding me
+                            through the
+                            financing process and ensuring a seamless delivery. If you're looking for your dream car,
+                            look no further!
+                        </p>
+                    </div>
+                    <div class="comment mt-4 text-justify">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" class="rounded-circle" width="40" height="40">
+                        <h4>Emily S.</h4>
+                        <span>- 15 April, 2023</span>
+                        <br>
+                        <p>Apex Automotive truly caters to passionate car lovers. The team's knowledge and dedication
+                            are evident in
+                            every aspect of their service. They helped me find the perfect supercar that aligned with my
+                            preferences
+                            and budget. Highly recommended!</p>
+                    </div>
+                    <div class="darker mt-4 text-justify">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" class="rounded-circle" width="40" height="40">
+                        <h4>David H.</h4>
+                        <span>- 27 August, 2021</span>
+                        <br>
+                        <p>Apex Automotive is the go-to place for serious car enthusiasts. Their collection is
+                            awe-inspiring, and
+                            you can tell they are passionate about what they do. The quality of their vehicles and the
+                            attention to
+                            detail set them apart from other dealers. If you want a top-notch supercar, this is the
+                            place to be.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-5">
+                    <form id="algin-form">
+                        <div class="form-group">
+                            <h4>Leave a Review</h4>
+                            <label for="message">Review</label>
+                            <textarea name="msg" id="" msg cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="fullname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-inline" style="padding: 3%;">
+                            <input type="checkbox" name="check" id="checkbx" class="mr-1">
+                            <label for="subscribe">Get latest news about supercars</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" id="post" class="btn">Post Review</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">Apex Automotive</h5>
+                    <p class="small text-muted">Where Luxury Meets Velocity.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+                            href="#">ApexAutomotive.com</a>
+                    </p>
+                    <br>
+                    <p class="small text-muted">Made by Jewel Hossain, CSE(IOT), Roll-14: <a class="text-primary"
+                            href="https://github.com/JewelH9">Link to my Github.</a></p>
+                    <p class="small text-muted">Made by Moupya Ghana, CSBS, Roll-36.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Available cars</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Follow us on</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fa-brands fa-twitter fa-fade"></i><a href="#"> Twitter</a></li>
+                        <li><i class="fa-brands fa-facebook fa-fade"></i><a href="#"> Facebook</a></li>
+                        <li><i class="fa-brands fa-instagram fa-fade"></i><a href="#"> Instagram</a></li>
+                        <li><i class="fa-brands fa-youtube fa-fade"></i><a href="#"> Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Subcription</h5>
+                    <p class="small text-muted">Subscribe to Apex Automotive and unlock a world of automotive
+                        excellence, be the
+                        first to know about exclusive offers, latest arrivals, and thrilling updates from the world of
+                        supercars.
+                    </p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-contrl" type="text" placeholder="Email" aria-label="Email"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-warning" id="button-addon2" type="button" style="padding: 1%;"><i
+                                    class="fas fa-paper-plane"></i>Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
